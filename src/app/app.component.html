@@ -1,0 +1,60 @@
+
+<div class="logo">
+
+</div>
+
+<!-- <div class="navbar"  style="background-color: black;">
+  <a class="nav-item nav-link active" href="#">HOME</a>
+  <a class="nav-item nav-link" href="#">PLACE APPOINTMENT</a>
+  <a class="nav-item nav-link" href="#">VIEW APPOINTMENT</a>
+  <a class="nav-item nav-link" href="#">CONTACT US</a>
+</div>
+
+<div class="sidebar">
+  <button (click)="landingpage()">Home</button><br>
+  <button (click)="placeAppointment()">Place Appointment</button><br>
+  <button (click)="viewAppointment()">View Appointment</button><br>
+  <button class="btn btn-primary" (click)="contactUspage()">Contact Us</button>
+</div> -->
+
+<div class="container-fluid" style="background-color: black;">
+  <nav class="nav nav-pills nav-justified fiex-sm-column">
+    <a class="nav-item nav-link active"routerLink="./landing-page">HOME</a>
+    <a class="nav-item nav-link" routerLink="./place-fitness-trainer-appointment">PLACE APPOINTMENT</a>
+    <a class="nav-item nav-link" routerLink="./view-appointment">VIEW APPOINTMENT</a>
+    <a class="nav-item nav-link"  routerLink="./contact-us">CONTACT US</a>
+  </nav>
+
+  <div class="row">
+    <div class="col-3" style="background-color: blanchedalmond;">
+        <nav class="nav nav-pills nav-justified">
+          <ul style="list-style-type: none;"><br><br>
+            <li class="nav-item"> 
+              <a class="nav-link"routerLink="./landing-page">HOME</a><br>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link"routerLink="./place-fitness-trainer-appointment">PLACE APPOINTMENT</a><br>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link"routerLink="./view-appointment">VIEW APPOINTMENT</a>
+            </li>
+            <hr>
+            <li class="nav-item"><a class="nav-link" routerLink="./contact-us">CONTACT US</a>
+            </li>
+            <hr>
+          </ul> 
+        </nav>
+      </div>
+      <div class="col-9" style="background-color: cadetblue;"> 
+         <router-outlet></router-outlet> </div>
+      </div>
+  </div>
+  
+
+
+
+
+
+
